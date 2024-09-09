@@ -1,3 +1,9 @@
+.DEFAULT_GOAL := help
+
+.PHONY=help
+help:
+	@cat $(MAKEFILE_LIST)
+
 .PHONY=generate
 generate:
 	go run github.com/bufbuild/buf/cmd/buf@v1.39.0 generate
