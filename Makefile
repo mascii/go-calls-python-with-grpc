@@ -5,3 +5,7 @@ generate:
 .PHONY=serve
 serve:
 	uv run python main.py
+
+.PHONY=client
+client:
+	go run main.go

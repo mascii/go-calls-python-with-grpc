@@ -24,13 +24,14 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rgreeter.proto\x12\x07greeter\"\"\n\x0cHelloRequest\x12\x12\n\x04name\x18\x01 \x01(\tR\x04name\")\n\rHelloResponse\x12\x18\n\x07message\x18\x01 \x01(\tR\x07message2F\n\x07Greeter\x12;\n\x08SayHello\x12\x15.greeter.HelloRequest\x1a\x16.greeter.HelloResponse\"\x00\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rgreeter.proto\x12\x07greeter\"\"\n\x0cHelloRequest\x12\x12\n\x04name\x18\x01 \x01(\tR\x04name\")\n\rHelloResponse\x12\x18\n\x07message\x18\x01 \x01(\tR\x07message2F\n\x07Greeter\x12;\n\x08SayHello\x12\x15.greeter.HelloRequest\x1a\x16.greeter.HelloResponse\"\x00\x42\x15Z\x13\x65xample.com/greeterb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'greeter_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
-  DESCRIPTOR._loaded_options = None
+  _globals['DESCRIPTOR']._loaded_options = None
+  _globals['DESCRIPTOR']._serialized_options = b'Z\023example.com/greeter'
   _globals['_HELLOREQUEST']._serialized_start=26
   _globals['_HELLOREQUEST']._serialized_end=60
   _globals['_HELLORESPONSE']._serialized_start=62
